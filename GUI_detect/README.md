@@ -37,7 +37,7 @@ python main.py
 【note】This project only realizes the pedestrian and vehicle detection targets. Please refer to the code(ui_main.py) for details.
 First, load the model, then select the image path or video path, or upload the RTSP data stream (0 can be entered here to call the local camera), and then click start detection. Eventually you'll see the results.
 ```
-
+[result](/inference/images/GUI_detect.png)
 
 ## Reference
 
