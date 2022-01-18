@@ -1,0 +1,5 @@
+# environments
+torch==1.6.0
+torchvision==0.7.0
+PyQt5==5.15.1
+pillow==7.2.0
