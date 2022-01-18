@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>biap人数检测接口</title>
+	<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0,user-scalable=no,minimum-scale=0.5,maximum-scale=0.5"/>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="./css/index.css">
+</head>
+<body>
+	<div class="body-container">
+		<div class="visit-title">
+			<div class="visit-font">访问次数</div>
+			<div id="visit-num"></div>
+		</div>
+		<div class="ai-container">
+			<div class="demo-title">
+				人数检测-接口功能演示
+			</div>
+			<div class="demo-detail">
+				上传一张图，将检测上传的图中的人头人脸，并为人脸标记出边框，并返回检测结果，即返回检测到的人脸的位置，人脸的检测置信度，人脸检测程序耗时毫秒数，本次请求总耗时毫秒数等等。
+			</div>
+			<div class="demo-container ">
+				<div class="demo-data-container demo-data-left">
+					<span id="img-scanning"></span>
+					<div class="demo-data">
+						<div class="canvas-container">
+						</div>
+						<div class="image-input">
+							<div class="image-input-container">
+								<div class="detect-result">
+									当前检测到的人数为：
+									<span id="detect_num">0</span>
+								</div>
+								<label class="image-local">
+									<input id="image-upload" type="file" accept="image/png, image/bmp, image/jpg, image/jpeg" class="image-local-input">
+									上传图片
+								</label>
+								<div class="image-notice">
+									图片文件类型支持PNG、JPG、JPEG、BMP，图片大小不超过2M。
+									<div id="error-tip"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="demo-data-container demo-data-right">
+					<div class="response-title">
+						Response
+					</div>
+					<div class="json-content" >
+						<pre id="result">
+						
+						</pre>
+					</div>
+					
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<div class="footer">
+		copyright&copy; 2019 - A++ Studio
+	</div>
+	<script type="text/javascript" src="./js/index.js"></script>
+
+</body>
+</html>
